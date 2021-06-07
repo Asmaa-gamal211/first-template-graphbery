@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --mainpadding: 80px;
+    --maincolor: #1a1a1a;
+    --secondcolor: #ffe500;
+    --mainmargin: 50px;
+}
+
+body {
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.p {
+    color: rgb(37, 37, 37);
+    line-height: 1.8;
+}
+
+
+/* start header */
+
+header {
+    color: rgb(155, 153, 153);
+    padding: 20px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXV9EWn0ogiu75Jxz8pf37E0xp-_rvPJglBw&usqp=CAU);
+    background-size: cover;
+    height: 600px;
+}
+
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .navbar-brand {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+header nav i {
+    color: var(--secondcolor);
+}
+
+header .container .header-content {
+    margin: 80px;
+}
+
+header .container .header-content p {
+    text-transform: uppercase;
+    margin: var(--mainmargin);
+}
+
+header .container .header-content p:first-of-type {
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+header .container .header-content p:last-of-type {
+    letter-spacing: 3px;
+}
+
+header .container .header-content button {
+    background-color: #ffe500;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 1px solid rgb(56, 56, 56);
+    letter-spacing: 2px;
+}
+
+
+/* end header */
+
+
+/* start brief */
+
+.brief {
+    padding: var(--mainpadding);
+}
+
+.brief img {
+    margin: 40px;
+    width: 250px;
+}
+
+.p {
+    letter-spacing: 2px;
+    line-height: 2;
+    color: rgb(141, 140, 140);
+}
+
+
+/* end brief */
+
+
+/* start services */
+
+.services {
+    padding: var(--mainpadding);
+    background-color: #eee;
+}
+
+.services .title {
+    text-align: center;
+}
+
+.services img {
+    width: 200px;
+    height: 200px;
+}
+
+.services h3 {
+    margin: 50px 0;
+}
+
+.services .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.services .cards .card {
+    padding: 30px;
+    box-shadow: 1px 1px 6px 1px rgb(211, 210, 210), -1px -1px 6px 1px rgb(211, 210, 210);
+}
+
+.services .cards .card i {
+    color: var(--secondcolor);
+}
+
+.services .cards .card h4 {
+    margin: 20px 0;
+}
+
+.services .cards .card p {
+    line-height: 1.6;
+}
+
+.services .cards .card {
+    box-shadow: 1px 1px 6px 1px rgb(211, 210, 210), -1px -1px 6px 1px rgb(211, 210, 210);
+    padding: 20px;
+}
+
+.services .cards .card div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.services .cards .card .pro {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 2px;
+    position: relative;
+}
+
+.services .cards .card .pro span {
+    width: 60%;
+    height: 100%;
+    background-color: var(--secondcolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services .cards .footer-card {
+    background-color: #333;
+    color: white;
+}
+
+.footer-card {
+    background-color: #333;
+    padding: var(--mainpadding);
+}
+
+.footer-card .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-card .container div {
+    background-color: white;
+    text-align: center;
+}
+
+
+/* end services */
+
+
+/* start portfolio */
+
+.portfolio {
+    padding: var(--mainpadding);
+}
+
+.portfolio .title {
+    text-align: center;
+}
+
+.portfolio img {
+    width: 200px;
+    height: 200px;
+}
+
+.portfolio h3 {
+    margin: 50px 0;
+}
+
+.portfolio .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio .container .right,
+.left {
+    width: 300px;
+    padding: 10px 50px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.portfolio .container .float {
+    float: right;
+}
+
+.portfolio .container .navbar-brand {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .images {
+    padding: var(--mainpadding);
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .images {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.portfolio button {
+    background-color: #ffe500;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: none;
+}
+
+.portfolio .button {
+    text-align: center;
+}
+
+.videos {
+    width: 100%;
+    text-align: center;
+    padding: var(--mainpadding);
+    background-image: url(http://2.bp.blogspot.com/_PUoIm_a8734/SmWi_DPqxxI/AAAAAAAABxI/fpC8sqkG9SM/s400/Black+and+White+Riverbank+and+City+Skyline.png);
+    background-size: cover;
+}
+
+.videos span {
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    color: var(--secondcolor);
+    border: 1px solid var(--secondcolor);
+}
+
+
+/* end portfolio */
+
+
+/* start team */
+
+.team {
+    padding: var(--mainpadding);
+    margin: var(--mainmargin);
+}
+
+.team .title {
+    text-align: center;
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+}
+
+.team h3 {
+    margin: 50px 0;
+}
+
+.team-member {
+    padding: var(--mainpadding);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.members {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.members::after {
+    content: 'joan doe';
+    background-color: rgba(255, 230, 0, 0.719);
+    width: 100%;
+    height: 25%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    letter-spacing: 2px;
+}
+
+.members p {
+    color: grey;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 1px rgb(211, 210, 210), -1px -1px 3px 1px rgb(211, 210, 210);
+}
+
+
+/* end team */
+
+
+/* start works */
+
+.works {
+    padding: 60px 20px;
+    position: relative;
+}
+
+.works .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.works .card1 {
+    background-color: #333;
+    color: rgb(202, 199, 199);
+    padding: 50px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.works .container p {
+    color: rgb(92, 91, 91);
+    text-align: center;
+}
+
+.works img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.works::before {
+    content: '';
+    background-color: var(--secondcolor);
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 135px;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* end works */
+
+
+/* start footer */
+
+.footer {
+    padding: var(--mainpadding);
+    background-color: var(--maincolor);
+    color: #ddd;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.footer .container .navbar-brand {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer ul li {
+    list-style: none;
+    text-align: center;
+    color: grey;
+}
+
+.footer ul li:first-of-type {
+    font-size: 20px;
+}
+
+.footer a {
+    background-color: var(--secondcolor);
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.footer .icons {
+    margin: 30px;
+}
+
+
+/* end footer */
